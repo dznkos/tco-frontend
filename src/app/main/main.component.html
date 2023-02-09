@@ -1,0 +1,124 @@
+<h2>TELCO</h2>
+<div class="warpper">
+  <input class="radio" id="one" name="group" type="radio" checked>
+  <input class="radio" id="two" name="group" type="radio">
+  <input class="radio" id="three" name="group" type="radio">
+  <div class="tabs">
+    <label class="tab" id="one-tab" for="one">TELCO</label>
+    <label class="tab" id="two-tab" for="two">PLANES</label>
+    <label class="tab" id="three-tab" for="three">COMPRAS</label>
+  </div>
+  <div class="panels">
+    <div class="panel" id="one-panel">
+      <div class="panel-title">PORQUE TELCO?</div>
+      <p>Es la mejor opcion para en cuanto a los planes que se dan a los clientes, con la mejor y mas rapida red de conexion.</p>
+    </div>
+    <div class="panel" id="two-panel">
+      <div class="panel-title">QUE PLANES TENEMOS?</div>
+      <p>Los mejores planes para todos, con una de las primeras redes de 5g en el pais.</p>
+    </div>
+    <div class="panel" id="three-panel">
+      <div class="panel-title">COMO SON LAS COMPRAS?</div>
+      <p>Son las mas seguras del pais con una seguridad otp de ultima generacion.</p>
+    </div>
+  </div>
+</div>
+<!-- *ngFor="let usr of userData" -->
+<div  class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+  <div class="offcanvas-header d-flex flex-row">
+    <div class="offcanvas-title " id="offcanvasRightLabel">Perfil</div>
+    <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+  </div>
+  <div class="offcanvas-body">
+      <div class="row">
+        <div class=" mt-4">
+                    <div class="container">
+                        <div class="card-block m-0">
+                            <figure class="profileuser">
+                                <img src="../../../assets/user.png" class="profile-avatar" alt="">
+                            </figure>
+
+                            <div class="meta">
+                              <h4 class="card-title mt-3">{{nombre}}</h4>
+                                <a class="role">Developer</a>
+                            </div>
+                            <div class="card-text">
+                                Desarrollador web que reside actualmente en Perú.
+                            </div>
+                        </div>
+                         <!--<div class="card-footer">
+                            <small>Last updated 3 mins ago</small>
+                            <button class="btn btn-secondary float-right btn-sm">show</button>
+                        </div>-->
+
+                        <div class="card mb-4">
+                          <div class=" p-0">
+                            <ul class="list-group list-group-flush rounded-3 p-2">
+                              <li class="list-group-item d-flex flex-row justify-content-evenly">
+                                <i class="fas fa-globe fa-lg text-warning"> <a href="https://roadmap.sh/java"></a> </i>
+                                <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                                <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                                <i class="fab fa-instagram fa-lg" style="color: #c52519;"></i>
+                                <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                              </li>
+                            </ul>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="container ">
+                        <div class=" mb-4 p-0 m-0">
+                          <div class="card-body">
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <p class="mb-0">Nombres</p>
+                              </div>
+                              <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{nombre}} {{apellido}}</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <p class="mb-0">Email</p>
+                              </div>
+                              <div class="col-sm-9">
+                                <p class="text-muted mb-0">{{ email }}</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <p class="mb-0">Celular</p>
+                              </div>
+                              <div class="col-sm-9">
+                                <p class="text-muted mb-0">959-234-548</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <p class="mb-0">Sexo</p>
+                              </div>
+                              <div class="col-sm-9">
+                                <p class="text-muted mb-0">Hombre</p>
+                              </div>
+                            </div>
+                            <hr>
+                            <div class="row">
+                              <div class="col-sm-3">
+                                <p class="mb-0">Dirección</p>
+                              </div>
+                              <div class="col-sm-9">
+                                <p class="text-muted mb-0"> Lima, Peru</p>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+
+
+
+                    </div>
+                </div>
+      </div>
+    </div>
+</div>

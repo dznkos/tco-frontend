@@ -1,0 +1,19 @@
+.logo-navbar {
+
+  width: 65px;
+  height: 65px;
+}
+
+.nav-link {
+
+}
+
+nav {
+  background: linear-gradient(90deg, rgba(139,168,255,1) 0%, rgba(8,181,114,1) 100%);
+  margin-bottom: 20px;
+  overflow-y: visible;
+}
+
+.dropdown {
+  margin-right: 45px;
+}

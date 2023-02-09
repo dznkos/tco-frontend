@@ -1,0 +1,30 @@
+
+.menu {
+    grid-area: aside;
+  }
+
+.main {
+    grid-area: article;
+}
+
+.main_content {
+    display: grid;
+    gap: 2px;
+    grid-template:
+      "aside article "
+      60px  auto;
+  }
+  
+  
+  @media (min-width: 700px) {
+  
+    .main_content {
+      display: grid;
+      gap: 2px;
+      grid-template:
+        "aside article "  /
+        60px  auto ;
+  
+    }
+  }
+  

@@ -1,0 +1,371 @@
+/* You can add global styles to this file, and also import other style files */
+/* You can add global styles to this file, and also import other style files */
+@import url(//netdna.bootstrapcdn.com/font-awesome/4.0.3/css/font-awesome.css);
+@import url(https://fonts.googleapis.com/css?family=Titillium+Web:300);
+@import '~bootstrap/dist/css/bootstrap.min.css';
+/* BASIC */
+
+:root {
+
+    --colorButtonLogin: rgb(32, 161, 122);
+    --colorButtonLoginTxt: #fff;
+
+    --colorButtonSpan1: rgb(21, 169, 77);
+    --colorButtonSpan2: rgb(24, 220, 119);
+    --colorButtonSpan3: rgb(47, 194, 147);
+    --colorButtonSpan4: rgb(43, 175, 142);
+    
+    --background-quickcard: rgb(255, 255, 255);
+    --background-postcard: rgb(216, 255, 240);
+}
+  
+ 
+
+html {
+    height: 100vh;
+    box-sizing: border-box;
+  }
+
+
+  body {
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+    font-family: "TitilliumWeb-Light",sans-serif;
+    background: linear-gradient(#141e30, #243b55);
+  }
+  
+  
+  #formFooter {
+    background-color: #f6f6f6;
+    border-top: 1px solid #dce8f1;
+    padding: 25px;
+    text-align: center;
+    -webkit-border-radius: 0 0 10px 10px;
+    border-radius: 0 0 10px 10px;
+  }
+  
+  
+  
+  /* TABS */
+  
+  h2.inactive {
+    color: #cccccc;
+  }
+  
+  h2.active {
+    color: #0d0d0d;
+    border-bottom: 2px solid #5fbae9;
+  }
+  
+  
+  /* FORM TYPOGRAPHY*/
+  
+    
+  /* ANIMATIONS */
+  
+  /* Simple CSS3 Fade-in-down Animation */
+  .fadeInDown {
+    -webkit-animation-name: fadeInDown;
+    animation-name: fadeInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 2.2s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+  }
+  
+  @-webkit-keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  @keyframes fadeInDown {
+    0% {
+      opacity: 0;
+      -webkit-transform: translate3d(0, -100%, 0);
+      transform: translate3d(0, -100%, 0);
+    }
+    100% {
+      opacity: 1;
+      -webkit-transform: none;
+      transform: none;
+    }
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  @-webkit-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @-moz-keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
+  
+  .fadeIn {
+    opacity:0;
+    -webkit-animation:fadeIn ease-in 1;
+    -moz-animation:fadeIn ease-in 1;
+    animation:fadeIn ease-in 1;
+  
+    -webkit-animation-fill-mode:forwards;
+    -moz-animation-fill-mode:forwards;
+    animation-fill-mode:forwards;
+  
+    -webkit-animation-duration:1s;
+    -moz-animation-duration:1s;
+    animation-duration:1s;
+  }
+  
+  .fadeIn.first {
+    -webkit-animation-delay: 0.4s;
+    -moz-animation-delay: 0.4s;
+    animation-delay: 0.4s;
+  }
+  
+  .fadeIn.second {
+    -webkit-animation-delay: 0.6s;
+    -moz-animation-delay: 0.6s;
+    animation-delay: 0.6s;
+  }
+  
+  .fadeIn.third {
+    -webkit-animation-delay: 0.8s;
+    -moz-animation-delay: 0.8s;
+    animation-delay: 0.8s;
+  }
+  
+  .fadeIn.fourth {
+    -webkit-animation-delay: 1s;
+    -moz-animation-delay: 1s;
+    animation-delay: 1s;
+  }
+  
+  /* Simple CSS3 Fade-in Animation */
+  .underlineHover:after {
+    display: block;
+    left: 0;
+    bottom: -10px;
+    width: 0;
+    height: 2px;
+    background-color: #56baed;
+    content: "";
+    transition: width 0.2s;
+  }
+  
+  .underlineHover:hover {
+    color: #0d0d0d;
+  }
+  
+  .underlineHover:hover:after{
+    width: 100%;
+  }
+  
+  
+  
+  /* OTHERS */
+  
+  *:focus {
+      outline: none;
+  } 
+  
+  #icon {
+    width:60%;
+  }
+
+  h3 {
+    margin: 10px;
+    font-weight: bold;
+    color: #ffffff;
+  }
+
+
+
+  html {
+    font-family: Lato, 'Helvetica Neue', Arial, Helvetica, sans-serif;
+    font-size: 14px;
+  
+  }
+  
+  .offcanvas-header {
+    background-color: #ffffff;
+  }
+  
+  .offcanvas-body {
+    width: 100% !important;
+    padding: 0;
+    overflow: hidden;
+    background-color: #ffffff;
+  }
+  
+  .offcanvas-title {
+    width: 100%;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+  }
+  
+  h5 {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+    margin: 0;
+  }
+  
+  .card {
+    font-size: 1em;
+    overflow: hidden;
+    padding: 0;
+    border: none;
+    border-radius: .28571429rem;
+    box-shadow: 0 1px 3px 0 #d4d4d5, 0 0 0 1px #d4d4d5;
+  }
+  
+  .card-block {
+    font-size: 1em;
+    position: relative;
+    margin: 0;
+    padding: 0 1em 1em 1em;
+    border: none;
+    border-top: 1px solid rgba(34, 36, 38, .1);
+    box-shadow: none;
+  }
+  
+  .card-img-top {
+    /* display: block; */
+    width: 100%;
+    height: auto;
+  }
+  
+  .card-title {
+    font-size: 1.28571429em;
+    font-weight: 700;
+    line-height: 1.2857em;
+  }
+  
+  .card-text {
+    clear: both;
+    margin-top: .5em;
+    color: rgba(0, 0, 0, .68);
+  }
+  
+  .card-footer {
+    font-size: 1em;
+    position: static;
+    top: 0;
+    left: 0;
+    max-width: 100%;
+    padding: .75em 1em;
+    color: rgba(0, 0, 0, .4);
+    border-top: 1px solid rgba(0, 0, 0, .05) !important;
+    background: #fff;
+  }
+  
+  .card-inverse .btn {
+    border: 1px solid rgba(0, 0, 0, .05);
+  }
+  
+  .profileuser {
+    position: absolute;
+    top: -12px;
+    display: inline-block;
+    overflow: hidden;
+    box-sizing: border-box;
+    width: 75px;
+    height: 75px;
+    margin: 0;
+    border: 1px solid #fff;
+    border-radius: 50%;
+  }
+  
+  .profile-avatar {
+    display: block;
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    background-color: #eeeeee;
+  }
+  
+  .profile-inline {
+    position: relative;
+    top: 0;
+    display: inline-block;
+  }
+  
+  .profile-inline ~ .card-title {
+    display: inline-block;
+    margin-left: 4px;
+    vertical-align: top;
+  }
+  
+  .text-bold {
+    font-weight: 700;
+  }
+  
+  
+  .meta {
+    margin-left: 70px;
+    width: 275px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    font-size: 1em;
+    color: rgba(0, 0, 0, .4);
+  }
+  .meta .role {
+    font-size: 0.7rem;
+  }
+  
+  .meta a {
+    text-decoration: none;
+    color: rgba(0, 0, 0, .4);
+  }
+  
+  .meta a:hover {
+    color: rgba(0, 0, 0, .87);
+  }
+  
+  /* Tabs Card */
+  .tab-card {
+  border:1px solid #eee;
+  }
+  
+  .tab-card-header {
+  background:none;
+  }
+  /* Default mode */
+  .tab-card-header > .nav-tabs {
+  border: none;
+  margin: 0px;
+  }
+  .tab-card-header > .nav-tabs > li {
+  margin-right: 2px;
+  }
+  .tab-card-header > .nav-tabs > li > a {
+  border: 0;
+  border-bottom:2px solid transparent;
+  margin-right: 0;
+  color: #737373;
+  padding: 2px 15px;
+  }
+  
+  .tab-card-header > .nav-tabs > li > a.show {
+    border-bottom:2px solid #007bff;
+    color: #007bff;
+  }
+  .tab-card-header > .nav-tabs > li > a:hover {
+    color: #007bff;
+  }
+  
+  .tab-card-header > .tab-content {
+  padding-bottom: 0;
+  }
+  
+  .list-group-item i:hover {
+  
+    zoom: 1.2;
+  }

@@ -1,0 +1,135 @@
+<div id="main-container">
+    <div class="container">
+      <h1>Telco los mejores planes</h1>
+      
+      <section class="boxes">
+        <div class="box blue">
+          <div class="box-content">
+            <h2>Recargas</h2>
+            <h3>desde:</h3>
+            <h3>S/ 3 soles</h3>
+            <span class="second-bar"></span><a class="button nav-link active-link" [routerLink]="['/recargas']" routerLinkActive="active-link">
+              <div class="expanded">
+              </div><span>Continue</span><i class="material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+        <div class="box pink">
+          <div class="box-content">
+            <h2>Internet</h2>
+            <h3>desde:</h3>
+            <h3>10 soles</h3>
+            <a class="button nav-link active-link" [routerLink]="['/internet']" routerLinkActive="active-link"> <span>Continue</span><i class="material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+        <div class="box yellow">
+          <div class="box-content">
+            <h2>Redes</h2>
+            <h3>desde:</h3>
+            <h3>S/ 25 soles</h3>
+            <a class="button nav-link active-link" [routerLink]="['/redessoc']" routerLinkActive="active-link"><span>Continue</span><i class="material-icons">arrow_forward</i></a>
+          </div>
+        </div>
+      </section>
+    </div>
+    <div  class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+      <div class="offcanvas-header d-flex flex-row">
+        <div class="offcanvas-title " id="offcanvasRightLabel">Perfil</div>
+        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+      </div>
+      <div class="offcanvas-body">
+          <div class="row">
+            <div class=" mt-4">
+                        <div class="container">
+                            <div class="card-block m-0">
+                                <figure class="profileuser">
+                                    <img src="../../../assets/user.png" class="profile-avatar" alt="">
+                                </figure>
+    
+                                <div class="meta">
+                                  <h4 class="card-title mt-3">{{nombre}}</h4>
+                                    <a class="role">Developer</a>
+                                </div>
+                                <div class="card-text">
+                                    Desarrollador web que reside actualmente en Perú.
+                                </div>
+                            </div>
+                             <!--<div class="card-footer">
+                                <small>Last updated 3 mins ago</small>
+                                <button class="btn btn-secondary float-right btn-sm">show</button>
+                            </div>-->
+    
+                            <div class="card mb-4">
+                              <div class=" p-0">
+                                <ul class="list-group list-group-flush rounded-3 p-2">
+                                  <li class="list-group-item d-flex flex-row justify-content-evenly">
+                                    <i class="fas fa-globe fa-lg text-warning"> <a href="https://roadmap.sh/java"></a> </i>
+                                    <i class="fab fa-github fa-lg" style="color: #333333;"></i>
+                                    <i class="fab fa-twitter fa-lg" style="color: #55acee;"></i>
+                                    <i class="fab fa-instagram fa-lg" style="color: #c52519;"></i>
+                                    <i class="fab fa-facebook-f fa-lg" style="color: #3b5998;"></i>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="container ">
+                            <div class=" mb-4 p-0 m-0">
+                              <div class="card-body">
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p class="mb-0">Nombres</p>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <p class="text-muted mb-0">{{nombre}} {{apellido}}</p>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p class="mb-0">Email</p>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <p class="text-muted mb-0">{{ email }}</p>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p class="mb-0">Celular</p>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <p class="text-muted mb-0">959-234-548</p>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p class="mb-0">Sexo</p>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <p class="text-muted mb-0">Hombre</p>
+                                  </div>
+                                </div>
+                                <hr>
+                                <div class="row">
+                                  <div class="col-sm-3">
+                                    <p class="mb-0">Dirección</p>
+                                  </div>
+                                  <div class="col-sm-9">
+                                    <p class="text-muted mb-0"> Lima, Peru</p>
+                                  </div>
+                                </div>
+                              </div>
+                            </div>
+    
+    
+    
+                        </div>
+                    </div>
+          </div>
+        </div>
+    </div>
+
+</div>
+
+  

@@ -1,0 +1,40 @@
+<body>
+  
+
+<div class="wrapper fadeInDown">
+    <div id="formContent">
+      <!-- Tabs Titles -->
+      <div class="login-box">
+        <h3>Login</h3>    
+        <!-- Login Form -->
+        <div id="formError">
+          <div class="alert-warning invalid" *ngIf='invalidLogin'>{{errorMessage}}</div>
+          <div class="alert-success success" *ngIf='loginSuccess'>{{successMessage}}</div>
+        </div>
+        
+        <form>
+          <div class="user-box">
+            <input type="text" id="username" class="fadeIn second" [(ngModel)]="username" name="username" required>
+            <label>Username</label>
+          </div>
+          <div class="user-box">
+          <input type="password" id="password" class="fadeIn third" [(ngModel)]="password" name="password" required>
+           <label>Password</label>
+          </div>
+          <div class="checkbox mb-3" bis_skin_checked="1">
+            <label class="remember" >
+              <input type="checkbox" value="remember-me"> Recuerdame
+            </label>
+          </div>
+          <a type="submit" (click)=handleLogin() class="fadeIn fourth" value="Log In">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            Log in</a>
+        </form>
+      </div>
+    </div>
+  </div>
+
+</body>
